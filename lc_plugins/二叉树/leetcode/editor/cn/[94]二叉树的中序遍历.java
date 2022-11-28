@@ -56,8 +56,17 @@
  * }
  */
 class Solution {
+    List<Integer> list = new ArrayList<>();
     public List<Integer> inorderTraversal(TreeNode root) {
-
+        dfs(root);
+        return list;
+    }
+    public void dfs(TreeNode node) {
+        if(node != null){
+            inorderTraversal(node.left);
+            list.add(node.val);
+            inorderTraversal(node.right);
+        }
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
