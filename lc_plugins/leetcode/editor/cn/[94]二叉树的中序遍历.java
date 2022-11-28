@@ -57,7 +57,7 @@
  */
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
-
+        
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
