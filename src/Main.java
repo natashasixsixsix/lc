@@ -1,5 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        boolean bol = true;
+        dfs(bol);
+        System.out.println(bol);
+    }
+    public static void dfs(boolean bol){
+        bol = false;
     }
 }
